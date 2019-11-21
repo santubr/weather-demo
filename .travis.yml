@@ -14,7 +14,7 @@ script:
 deploy:
   provider: pages
   skip_cleanup: true
-  github_token: mnyV70OrzFrOIEG3pi5FUw
+  github_token: 747bf05b79204e44c1804e11b2ea37469c56cd46
   local_dir: dist/weather-ngrx
   on:
     branch: master
