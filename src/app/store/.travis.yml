@@ -5,9 +5,17 @@ dist: trusty
 sudo: required
 branches:
   only:
-  - master
+    - master
 before_script:
   - npm install -g @angular/cli
 script:
-- ng lint
-- ng build --prod --base-href https://github.com/santubr/weather-demo.git
+  - ng lint
+  - npm run test-headless
+  - ng build --prod --base-href https://github.com/santubr/weather-demo.git
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: dist/travis-demo
+  on:
+    branch: master
