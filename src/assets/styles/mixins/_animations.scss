@@ -1,0 +1,27 @@
+$displacement: 3px;
+
+@keyframes shake-shake {
+  0% {
+    transform: translateX(-$displacement);
+  }
+  20% {
+    transform: translateX($displacement);
+  }
+  40% {
+    transform: translateX(-$displacement);
+  }
+  60% {
+    transform: translateX($displacement);
+  }
+  80% {
+    transform: translateX(-$displacement);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.shake-shake {
+    animation-name: shake-shake;
+    animation-duration: 0.3s;
+}

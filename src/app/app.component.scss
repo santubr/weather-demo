@@ -1,0 +1,14 @@
+@import '../styles.scss';
+
+.container {
+  font-family: 'Montserrat', 'San Francisco', Helvetica, Arial, sans-serif;
+  background: $weather-bg-light;
+  height: 100vh;
+  min-height: 100vh;
+  width: 100%;
+  max-width: 1280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
